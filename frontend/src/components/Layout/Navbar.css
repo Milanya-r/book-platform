@@ -1,0 +1,114 @@
+/* Общий стиль для навбара */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+  
+  .menu-toggle:hover {
+    color: #fff; /* Убираем подсветку зеленым */
+  }
+  
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    z-index: 10;
+  }
+  
+  .navbar-menu.open {
+    display: flex;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .navbar-links li {
+    width: 100%;
+  }
+  
+  .navbar-links a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent; /* Убираем изначальный цвет */
+  }
+  
+  .navbar-links a.active {
+    background-color: #4CAF50; /* Зеленый цвет только для активных элементов */
+    color: #fff;
+  }
+  
+  .navbar-links a:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  .navbar-actions {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .navbar-profile {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #555;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .navbar-profile:hover {
+    background-color: #4CAF50;
+  }
+  
+  .language-switcher {
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .language-switcher:hover {
+    background-color: #4CAF50;
+  }
+  
